@@ -7,11 +7,6 @@ typedef struct{
 	size_t len;
 }list_pair;
 
-void _free(void* data){
-	if (data)
-		free(data);
-}
-
 
 pair stroke(int** data, const int len){
 	list_pair emp_cel = {NULL, 0};
@@ -77,8 +72,8 @@ pair stroke(int** data, const int len){
 		ret = loss.arr[rand() % loss.len];
 	else if (emp_cel.arr)
 		ret = emp_cel.arr[rand() % emp_cel.len];
-	_free(loss.arr);
-	_free(winning.arr);
-	_free(emp_cel.arr);
+	free(loss.arr);
+	free(winning.arr);
+	free(emp_cel.arr);
 	return ret;
 }
