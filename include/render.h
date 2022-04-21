@@ -2,9 +2,8 @@
 #include <stddef.h>
 #include <pair.h>
 
-#define FIELD_SIZE_W 13
-#define NAME_GAME "Tic-tac-toe"
-#define CLOR_NAME_GAME "\e[1;36m"
+#define FIELD_SIZE_W 17
+
 
 typedef enum{
 	DRAW,
@@ -24,7 +23,7 @@ void offcursor();
 void descentCursorEnd();
 void clear(size_t len);
 void printField(const int LEN);
-void printCentering(const char* BEGIN, const char* COLOUR);
+void printBegin(const char* BEGIN);
 void printBar(pairINT score);
 void transferCursor(pairINT curr, pairINT newСurr);
 void printValues(const int MOTION);
