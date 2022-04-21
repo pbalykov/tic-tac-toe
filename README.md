@@ -1,14 +1,17 @@
-#Game Tic tac toe
+# Game Tic tac toe
 
 The game will only work on UNIX systems
 
-#Launch and build
+# Launch and build
 
-After installation, to build using make and after assembly, you can run ./Tic_tac_toe or make run
+After installation, to build using make and after assembly, you can run ./Tic-tac-toe or make run
 
 
-#Controls 
-
-W/w-up A/a-left S/s-down D/d-right 
-enter-to establish
-q-exit n-resume 
+# Controls 
+```
+W/w or KEY\_UP - up 
+A/a or KEY\_LEFT - left
+S/s or KEY\_DOWN - down
+D/d or KEY_RIGHT - right 
+enter - to establish
+```

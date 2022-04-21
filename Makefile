@@ -1,18 +1,18 @@
-.PHONY: all, run, clean
+.PHONY: run, all, clean
 
 
 all: main
 
 
-main: main.o iostream.o work_field.o score.o bot.o
-	gcc *.o -o Tic_tac_toe 
-
+main: workField.o main.o pair.o render.o counting.o input.o endGame.o bot.o
+	gcc $^ -o Tic-tac-toe 
 
 %.o: %.c
-	gcc -c $< -o $*.o
+	gcc -Iinclude -c $< -o $*.o
 
 clean:
-	rm -f *.o Tic_tac_toe 
+	rm -f *.o Tic-tac-toe
 
 run:main
-	./Tic_tac_toe
+	./Tic-tac-toe
+
